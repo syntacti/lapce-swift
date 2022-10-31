@@ -101,7 +101,7 @@ dependencies = [
 [[package]]
 name = "lapce-plugin"
 version = "0.1.0"
-source = "git+https://github.com/panekj/lapce-plugin-rust.git?branch=volt#54833f81fe56e2f99b86ff8e98276a0f49453b1f"
+source = "git+https://github.com/lapce/lapce-plugin-rust.git?branch=volt#5fab5dacd474505b34c9b34b32abb1f98575ff28"
 dependencies = [
  "anyhow",
  "bytes",

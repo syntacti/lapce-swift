@@ -1,9 +1,13 @@
+#:schema https://raw.githubusercontent.com/ghishadow/lapce-schema/main/volt.schema.json
 name = "lapce-swift"
 version = "0.1.0"
 author = "ghishadow"
 display-name = "Swift"
 description = "Swift for Lapce: powered by sourcekit-lsp"
 wasm = "lapce-swift.wasm"
+repository = "https://github.com/syntacti/lapce-swift"
+
+icon = "assets/Swift_logo_color.webp"
 
 [activation]
 language = ["swift"]

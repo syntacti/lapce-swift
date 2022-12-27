@@ -1,7 +1,7 @@
 #:schema https://raw.githubusercontent.com/ghishadow/lapce-schema/main/volt.schema.json
 name = "lapce-swift"
-version = "0.1.0"
-author = "ghishadow"
+version = "0.1.1"
+author = "syntacti"
 display-name = "Swift"
 description = "Swift for Lapce: powered by sourcekit-lsp"
 wasm = "lapce-swift.wasm"
@@ -10,5 +10,16 @@ repository = "https://github.com/syntacti/lapce-swift"
 icon = "assets/Swift_logo_color.webp"
 
 [activation]
-language = ["swift"]
-workspace-contains = ["*/Package.swift"]
+language = ["swift", "c", "cpp"]
+workspace-contains = [
+   "*/Package.swift",
+    "*/*.c",
+  "*/*.h",
+  "*/*.cpp",
+  "*/*.hpp",
+  ]
+
+
+[config."volt.serverPath"]
+default = ""
+description = "Path to sourcekit-lsp"

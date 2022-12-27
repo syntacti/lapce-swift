@@ -34,6 +34,16 @@ fn initialize(params: InitializeParams) -> Result<()> {
       pattern: Some(string!("**/*.swift")),
       scheme: None,
     },
+    DocumentFilter {
+      language: Some(string!("cpp")),
+      pattern: Some(string!("**/*.{H,hh,hpp,h++,C,cc,cpp,c++}")),
+      scheme: None,
+    },
+    DocumentFilter {
+      language: Some(string!("c")),
+      pattern: Some(string!("**/*.{h,c}")),
+      scheme: None,
+    },
   ];
   let mut server_args = vec![];
 
